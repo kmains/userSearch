@@ -11,7 +11,7 @@ function Pages({page, numRes, setPage}) {
         //First, Prev, Next, Last, display current page+/-2 & first/last
         const nextPage = (page<totalPages ? page+1 : '');
         const prevPage = (page>1 ? page-1 : '');
-
+ 
         return (<div className="pagination">
             {page !== 1 &&
             <button onClick={()=>setPage(1)} >First</button>
